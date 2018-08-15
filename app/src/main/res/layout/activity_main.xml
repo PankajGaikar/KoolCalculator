@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/resultsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#6ce1f3"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingTop="60dp"
+                    android:text="175"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/sevenButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="7" />
+
+                <Button
+                    android:id="@+id/eightButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="8" />
+
+                <Button
+                    android:id="@+id/nineButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="9" />
+
+                <ImageButton
+                    android:id="@+id/divideButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:src="@drawable/divide"
+                    app:srcCompat="@drawable/divide" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/fourButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="4" />
+
+                <Button
+                    android:id="@+id/fiveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="5" />
+
+                <Button
+                    android:id="@+id/sixButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="6" />
+
+                <ImageButton
+                    android:id="@+id/multiplyButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:src="@drawable/divide"
+                    app:srcCompat="@drawable/multiply" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/OneButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <Button
+                    android:id="@+id/twoButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="2" />
+
+                <Button
+                    android:id="@+id/threeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="3" />
+
+                <ImageButton
+                    android:id="@+id/substractButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:src="@drawable/divide"
+                    app:srcCompat="@drawable/subtract" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="192dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/clearButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="#5bd0e4"
+                        android:text="CLEAR"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/zeroButton"
+                    android:layout_width="97dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/background_light"
+                    android:text="Button"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="0" />
+
+                <ImageButton
+                    android:id="@+id/additionButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/background_light"
+                    android:src="@drawable/divide"
+                    app:srcCompat="@drawable/add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/equalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equal"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
