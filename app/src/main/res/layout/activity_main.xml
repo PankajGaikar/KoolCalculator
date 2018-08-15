@@ -197,44 +197,43 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="87dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="4">
 
-                <LinearLayout
-                    android:layout_width="192dp"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_weight="2">
 
                     <Button
-                        android:id="@+id/clearButton"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_weight="1"
-                        android:background="#5bd0e4"
                         android:text="CLEAR"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="24sp" />
-                </LinearLayout>
+                        android:id="@+id/clearBtn"
+                        android:layout_centerInParent="true"
+                        android:textSize="25dp"
+                        android:background="#43c8ca"/>
+
+                </RelativeLayout>
 
                 <Button
-                    android:id="@+id/zeroButton"
-                    android:layout_width="97dp"
+                    android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:background="@android:color/background_light"
                     android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:id="@+id/zeroBtn"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:textColor="#000000"
+                    android:textSize="30dp"/>
 
                 <ImageButton
-                    android:id="@+id/additionButton"
-                    style="@style/Widget.AppCompat.ImageButton"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:background="@android:color/background_light"
-                    app:srcCompat="@drawable/add" />
+                    android:id="@+id/addBtn"
+                    android:src="@drawable/add"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"/>
+
 
             </LinearLayout>
 
