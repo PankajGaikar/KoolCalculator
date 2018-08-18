@@ -206,31 +206,35 @@
                 android:orientation="horizontal"
                 android:weightSum="4">
 
-                <RelativeLayout
+                <Button
+                    android:id="@+id/pointButton"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2">
-
-                    <Button
-                        android:id="@+id/clearBtn"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:background="#43c8ca"
-                        android:text="CLEAR"
-                        android:textSize="25dp" />
-
-                </RelativeLayout>
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="DEL"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/zeroBtn"
+                    android:id="@+id/zeroButton"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/equalButton"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="#00ffffff"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="30dp" />
+                    android:src="@drawable/equal" />
 
                 <ImageButton
                     android:id="@+id/addBtn"
@@ -239,19 +243,9 @@
                     android:layout_weight="1"
                     android:background="#00ffffff"
                     android:src="@drawable/add" />
-
-
             </LinearLayout>
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/equalButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="false"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/equal"/>
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
